@@ -36,10 +36,10 @@ export default function Working() {
 
     return (
         <div className="container mx-auto px-4 md:px-0">
-            <div className="bg-[#F2F2F2]">
+            <div className="">
                 <div className="flex gap-6 pt-16 pb-16 pl-0 md:pl-[70px]">
                     <div className="w-2 h-12 bg-[#EA0C0C]"></div>
-                    <h1 className="font-extrabold text-[28px] md:text-[40px]">
+                    <h1 className="font-extrabold text-white text-[28px] md:text-[40px]">
                         Как это работает
                     </h1>
                 </div>
@@ -65,9 +65,9 @@ export default function Working() {
                         ))}
                     </div>
                 </div>
-                <div className="flex justify-center pb-[88px]">
+                <div className="flex justify-center pt-8 pb-[88px]">
                     <motion.button
-                        className="bg-[#EA0C0C] rounded-[10px] p-5 text-white font-bold text-xl uppercase"
+                        className="bg-[#2D1E2F] rounded-[10px] p-5 cursor-pointer text-white font-bold text-xl uppercase"
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
                     >

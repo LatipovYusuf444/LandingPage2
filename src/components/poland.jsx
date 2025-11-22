@@ -4,8 +4,8 @@ import image from '../assets/Image.png';
 
 const Poland = () => {
     return (
-        <div className="container mx-auto bg-[#F2F2F2] pb-16 px-4 md:px-0">
-            <div className="flex flex-col md:flex-row justify-center items-center gap-12 md:gap-[85px]">
+        <div className="container mx-auto text-white pb-16 px-4 md:px-0">
+            <div className="flex flex-col md:flex-row justify-center items-center md:gap-[85px]">
                 <div className="flex flex-col md:flex-1">
                     <motion.div
                         className="flex gap-6 pb-8 md:pb-16"
@@ -37,7 +37,7 @@ const Poland = () => {
                         </p>
                     </motion.div>
                     <motion.button
-                        className="w-32 h-12 border-2 border-[#95A4AA] rounded-2xl hover:bg-[#EA0C0C] hover:text-white transition-colors"
+                        className= "cursor-pointer w-32 h-12 rounded-2xl bg-[#2D1E2F] hover:bg-[#2D1E2F] hover:text-white transition-colors"
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
                     >

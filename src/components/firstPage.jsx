@@ -1,11 +1,11 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import slaydi from '../assets/slaydi.svg';
+import slaydi from '../assets/Yusuf.svg';
 
 export default function FirstPage() {
   return (
-    <div className='container mx-auto px-4 sm:px-10'>
-      <div className='flex flex-col lg:flex-row justify-center items-center gap-12 lg:gap-[120px] pt-10 lg:pt-20'>
+    <div className='container mx-auto px-4 sm:px-10 pb-10 text-white'>
+      <div className='flex flex-col lg:flex-row justify-center items-center gap-16 lg:gap-[120px] pt-10 lg:pt-20'>
         <motion.div
           className='flex flex-col'
           initial={{ opacity: 0, x: -50 }}
@@ -41,13 +41,13 @@ export default function FirstPage() {
             transition={{ duration: 0.8, delay: 0.6 }}
           >
             <input
-              className="w-full sm:w-[382px] h-12 bg-[#F2F2F2] p-3 rounded-xl text-[16px] outline-none border border-transparent"
+              className="w-full sm:w-[382px] h-12 bg-[#F2F2F2] p-3 rounded-xl text-[16px] outline-none border text-black border-transparent"
               type="text"
               placeholder="Вставить ссылку на товар*"
             />
             <motion.button
-              className="h-12 px-6 bg-red-600 hover:bg-red-700 text-white rounded-xl font-semibold mt-2 sm:mt-0"
-              whileHover={{ scale: 1.05, backgroundColor: "#e63946" }}
+              className="h-12 px-6 bg-[#2D1E2F] hover:bg-[#2D1E2F] text-white rounded-xl font-semibold mt-2 sm:mt-0"
+              whileHover={{ scale: 1.05, backgroundColor: "#2D1E2F" }}
               transition={{ type: "spring", stiffness: 300 }}
             >
               Заказать
@@ -55,7 +55,7 @@ export default function FirstPage() {
           </motion.div>
         </motion.div>
         <motion.img
-          className='w-full max-w-[738px] mt-8 lg:mt-0'
+          className='w-full max-w-[738px] mt-8 mr-[-142px] lg:mt-0'
           src={slaydi}
           alt=""
           initial={{ opacity: 0, x: 50 }}

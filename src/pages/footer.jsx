@@ -4,7 +4,7 @@ import logo2 from "../assets/logo2.svg";
 
 const Footer = () => {
     return (
-        <div className="container mx-auto bg-[#1E2122] px-4 md:px-0">
+        <div className="container mx-auto footer-bg px-4 md:px-0">
             <div className="flex flex-col md:flex-row flex-wrap pt-16 pb-16 justify-between gap-10">
                 <motion.div
                     className="flex flex-col gap-4 md:gap-8"

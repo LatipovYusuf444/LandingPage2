@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import logo from '../assets/logo.svg';
+import logo2 from "../assets/logo2.svg";
 import telephone from '../assets/telephone.svg';
 import telegram from '../assets/telegram.svg';
 import vector from '../assets/vector.svg';
@@ -14,7 +14,7 @@ export default function Navbar() {
 
     return (
         <motion.div
-            className='container mx-auto'
+            className='text-white container mx-auto'
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
@@ -27,7 +27,7 @@ export default function Navbar() {
                     transition={{ duration: 0.8 }}
                 >
                     <div>
-                        <img src={logo} alt="logo" className="cursor-pointer" />
+                        <img src={logo2} alt="logo" className="cursor-pointer" />
                     </div>
                     <div>
                         <div className='flex flex-col lg:flex-row items-center lg:gap-4'>
@@ -71,8 +71,8 @@ export default function Navbar() {
                     <p><b>€</b> 00,00</p>
                 </motion.div>
                 <motion.div
-                    className='w-[165px] h-12 bg-[#EA0C0C] rounded-lg text-white text-center flex items-center justify-center'
-                    whileHover={{ scale: 1.05, backgroundColor: "#ff1c1c" }}
+                    className='w-[165px] cursor-pointer h-12 bg-[#2D1E2F] rounded-lg text-white text-center flex items-center justify-center'
+                    whileHover={{ scale: 1.05, backgroundColor: "#2D1E2F" }}
                     transition={{ type: "spring", stiffness: 300 }}
                 >
                     <button>Оформить заказ</button>
@@ -104,8 +104,8 @@ export default function Navbar() {
                     </motion.li>
                 ))}
                 <motion.li
-                    className='flex items-center bg-[#00BA88] text-white rounded-md'
-                    whileHover={{ scale: 1.05, backgroundColor: "#00d699" }}
+                    className='flex items-center bg-[#2D1E2F] text-white rounded-md'
+                    whileHover={{ scale: 1.05, backgroundColor: "#2D1E2F" }}
                     transition={{ type: "spring", stiffness: 300 }}
                 >
                     <a href="#" className='flex p-1 items-center gap-1'>

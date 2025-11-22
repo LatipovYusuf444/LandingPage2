@@ -35,7 +35,7 @@ const shops = [
 
 const Shop = () => {
     return (
-        <div className='container mx-auto bg-[#F2F2F2] pb-16 px-4 md:px-0'>
+        <div className='container mx-auto pb-16 px-4 md:px-0 '>
             <motion.div
                 className='flex gap-6 pl-0 md:pl-16 pt-16 md:pt-24'
                 initial={{ opacity: 0, x: -50 }}
@@ -44,13 +44,13 @@ const Shop = () => {
                 transition={{ duration: 0.8 }}
             >
                 <div className='w-2 h-16 bg-[#EA0C0C]'></div>
-                <h1 className='font-extrabold text-[32px] md:text-[40px] pb-12'>Каталог магазинов</h1>
+                <h1 className='font-extrabold text-[32px] text-white md:text-[40px] pb-12'>Каталог магазинов</h1>
             </motion.div>
             <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 pl-0 md:pl-16'>
                 {shops.map((shop, index) => (
                     <motion.div
                         key={index}
-                        className='w-full bg-white pl-4 md:pl-8 pt-10 pb-8 rounded-[10px] shadow-md hover:shadow-xl transition-shadow cursor-pointer'
+                        className='w-full bg-white pl-2 md:pl-8 pt-10 pb-8 rounded-[10px] shadow-md hover:shadow-xl transition-shadow cursor-pointer'
                         initial={{ opacity: 0, y: 50 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
